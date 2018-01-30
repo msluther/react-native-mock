@@ -4,10 +4,10 @@ import TimerMixin from 'react-timer-mixin';
 import NativeMethodsMixin from '../mixins/NativeMethodsMixin';
 import View from './View';
 import Text from './Text';
+import createClass from 'create-react-class';
+import PropTypes from 'prop-types';
 
-const { PropTypes } = React;
-
-const TextInput = React.createClass({
+const TextInput = createClass({
   propTypes: {
     ...View.propTypes,
     /**

@@ -1,11 +1,11 @@
 /**
  * https://github.com/facebook/react-native/blob/master/Libraries/Components/Touchable/TouchableOpacity.js
  */
-import React from 'react';
-
+import PropTypes from 'prop-types';
+import createClass from 'create-react-class';
 import TouchableWithoutFeedback from './TouchableWithoutFeedback';
 
-const TouchableOpacity = React.createClass({
+const TouchableOpacity = createClass({
   propTypes: {
     ...TouchableWithoutFeedback.propTypes,
 
@@ -13,7 +13,7 @@ const TouchableOpacity = React.createClass({
      * Determines what the opacity of the wrapped view should be when touch is
      * active. Defaults to 0.2.
      */
-    activeOpacity: React.PropTypes.number,
+    activeOpacity: PropTypes.number,
   },
 
   render() {
